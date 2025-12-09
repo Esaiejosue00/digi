@@ -1,0 +1,87 @@
+ <!DOCTYPE html>
+    <html lang="fr">
+        <head>
+            <meta charset="utf-8">
+            <title>Mes premiers pas</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f0f0f0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh;
+                    margin: 0;
+                }
+                .div-form {
+                    width:40%;
+                    background-color: rgb(170, 191, 193);
+                    padding: 20px;
+                    border-radius: 5px;
+                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+                }
+                label{  display: inline;
+                    color:#fff;
+                    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+                }
+                input[type="text"],input[type="password"] {
+                    display: inline-block;
+                    width: 85%;
+                    padding: 10px;
+                    margin: 5px 0 15px 0;
+                    border: 1px solid #DDD;
+                    border-radius: 6px;
+        
+                } 
+                input[type="text"]:focus,input[type="password"]:focus {
+                    border-color: #00ff08;
+                    box-shadow: 0 0 5px rgba(0, 255, 8, 0.5);
+                    outline: none;
+                }
+                input[type="submit"] {
+                    background-color: #00ff08;
+                    color: white;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 3px;
+                    box-shadow: 2px 2px 5px rgba(91, 88, 88, 0.2);
+                    cursor: pointer;
+                }
+                input[type="submit"]:hover {
+                    background-color: #00cc06;
+                }
+                h2 {
+                    text-align: left;
+                    color: #010d14;
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+                }
+                .deco {
+                    width: 100%;
+                    height: 10px;
+                    background: linear-gradient(90deg, #00ff08, #00cc06);
+                    margin-bottom: 20px;
+                    border-radius: 5px;
+                }
+
+            </style>
+        </head>
+        <body>
+            <div class="div-form">
+                <div class="deco"></div>
+                <form>
+                    <h2>Inscription</h2>
+                    <label for="name">Utilisateur</label><br>
+                    <input type="text" id="name" name="name" placeholder="E-mail ou nom d'utilisateur"><br>
+                    <label for="password">Mot de passe</label><br>
+                    <input type="password" id="password" name="password" placeholder="Mot de passe"><br>
+                    <label for="Confirmpassword">Confirmer le mot de passe</label><br>
+                    <input type="password" id="Confirmpassword" name="Confirmpassword" placeholder="Confirmer le mot de passe">
+                    <input type="submit" value="S'inscrire"><br>
+                    <hr>
+                    <p style="font-size: 12px;display:inline;color:#000000;">Vous avez déjà un compte ? <a href="Connexion1.html" style="color: #ffffff;">Se connecter</a></p><br><br>
+                  
+                </form>
+            </div>
+
+        </body>
+    </html>
